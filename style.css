@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --default: #f0f0f3;
+  --dark: #BABECCc9;
+  --darkdark: #babecc;
+}
+
+input { 
+  border: 0;  
+  outline: 0; 
+}
+
+*{
+  text-align: center;
+  font-family: Inter, sans-serif;
+  color: var(--darkdark);
+  font-size: 15px;
+}
+
+html, body{
+  height: 100%;
+  display: flex;
+  background: var(--default);
+  width: 100%;
+  align-items:center;
+}
+
+::placeholder{  
+  color: var(--dark); 
+}
+
+.n {
+  flex: 1;
+  border-radius: 12px;
+  padding: 15px 30px;
+  margin: 20px;
+  background: var(--default);
+  display: inline-block;
+}
+
+h1{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.neu0-inner{
+  margin: 0;
+  box-shadow:  inset -5px -5px 8px var(--white),  
+               inset 5px 5px 8px #BABECC62;
+}
+.neu0-outer{
+  padding: 3px;
+  box-shadow:  -5px -5px 6px var(--white),
+               5px 5px 8px #BABECC62;
+}
+
+.neu1{
+  padding: 20px 40px;
+  box-shadow: -10px -10px 20px var(--white),
+              10px 10px 20px #BABECC62,
+              inset 10px 10px 5px var(--white),
+              inset -10px -10px 5px #BABECC40;
+}
+
+.neu2{
+  box-shadow:  -5px -5px 8px var(--white),
+               5px 5px 12px var(--dark);
+}
+
+.neu3{
+  box-shadow:  inset -5px -5px 10px var(--white),  
+               inset 5px 5px 10px #BABECC62;
+}
+
+.neu4{
+  color:var(--default);
+  box-shadow: -5px -5px 20px var(--white),  
+              5px 5px 20px var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+.neu4:hover {
+  box-shadow: -3px -3px 5px var(--white), 
+              3px 3px 5px var(--dark);
+}
+.neu4:active {
+  box-shadow: inset -2px -2px 2px var(--white),
+              inset 2px 2px 2px var(--dark);
+}
+
+.neu5 {
+  box-shadow: inset -5px -5px 5px var(--white),
+              inset 2px 2px 8px var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+.neu5:focus {
+    box-shadow: inset -1px -1px 2px var(--white),
+                inset 1px 1px 2px var(--dark);
+}
+
+#toggle { 
+  position:absolute; 
+  left: -100000000vw;
+}
+.icon-box {
+  box-shadow: -2px -2px 5px var(--white), 
+              3px 3px 5px var(--dark);
+}
+#toggle:checked + .icon-box{
+  box-shadow: inset -2px -2px 5px var(--white), 
+              inset 3px 3px 5px var(--dark);
+}
